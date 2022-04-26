@@ -1,14 +1,17 @@
 import Header from "../landing-page-components/Header";
+import Course from "../landing-page-components/Course";
+import Footer from "../landing-page-components/Footer";
 import { BiSearch } from "react-icons/bi";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
 import SelectCategory from "./SelectCategory";
 
 function CoursesPage() {
   return (
-    <div className="pb-24">
+    <div className="">
       <Header />
 
       {/* Search (All types of selection) section  */}
+      {/* Header Section ---------------->  */}
       <div className="py-12 bg-sec px-24 flex gap-4 justify-between">
         {/* search button  */}
         <label className="relative block grow">
@@ -87,10 +90,10 @@ function CoursesPage() {
 
       {/* Main content of the courses page ------------------->  */}
       {/* ------------------------------------>  */}
-      <div className="flex px-24 bg-sec pb-24 gap-5">
+      <div className="flex pl-24 bg-sec pb-24 gap-8">
         {/* select category / course level / price / course period / rating */}
-        {/* ------------------------------------------->  */}
-        <div className="rounded-md w-80 bg-white p-4">
+        {/* left side------------------------------------------>  */}
+        <div className="rounded-md w-80 bg-white p-4 h-full">
           <div className="flex justify-between items-center">
             <h3 className="font-medium">Category</h3>
             <RiArrowDropDownLine className="text-2xl text-gray-600" />
@@ -138,8 +141,99 @@ function CoursesPage() {
         </div>
 
         {/* Search results --------------------->  */}
-        <div className="flex-1">Show Results</div>
+        {/* right side -------------------->  */}
+        <div className="flex-1 pb-12 ">
+          <h1 className="text-xl font-semibold mt-2 mb-4">
+            Search Results(32)
+          </h1>
+
+          {/* Courses sections --------------->  */}
+          <div className="flex gap-4 flex-wrap">
+            <Course
+              imgSrc={"vidyarthi-app/assets/courses-img/img1.png"}
+              tag={"Design Courses"}
+              title={"How to become a good designer"}
+              desc={
+                "The DesignCourse is the best place to learn and understand UI fundamentals."
+              }
+              price={25}
+            />
+            <Course
+              imgSrc={"vidyarthi-app/assets/courses-img/img2.png"}
+              tag={"Coding"}
+              title={"Learn about Android Coding"}
+              desc={
+                "The DesignCourse is the best place to learn and understand UI fundamentals."
+              }
+              price={20}
+            />
+            <Course
+              imgSrc={"vidyarthi-app/assets/courses-img/img3.png"}
+              tag={"Design Courses"}
+              title={"How to become a good designer"}
+              desc={
+                "The DesignCourse is the best place to learn and understand UI fundamentals."
+              }
+              price={25}
+            />
+            <Course
+              imgSrc={"vidyarthi-app/assets/courses-img/img1.png"}
+              tag={"Design Courses"}
+              title={"How to become a good designer"}
+              desc={
+                "The DesignCourse is the best place to learn and understand UI fundamentals."
+              }
+              price={25}
+            />
+            <Course
+              imgSrc={"vidyarthi-app/assets/courses-img/img1.png"}
+              tag={"Design Courses"}
+              title={"How to become a good designer"}
+              desc={
+                "The DesignCourse is the best place to learn and understand UI fundamentals."
+              }
+              price={25}
+            />
+            <Course
+              imgSrc={"vidyarthi-app/assets/courses-img/img2.png"}
+              tag={"Coding"}
+              title={"Learn about Android Coding"}
+              desc={
+                "The DesignCourse is the best place to learn and understand UI fundamentals."
+              }
+              price={20}
+            />
+          </div>
+
+          {/* Next / Previous Section ----------------->  */}
+          {/* ------------------------>  */}
+          <div className="pt-12 absolute left-1/2 -translate-x-1/2 flex justify-center gap-3 items-center">
+            <span className="cursor-pointer font-medium text-gray-500 text-sm">
+              Prev
+            </span>
+            <span className="cursor-pointer p-2 w-11 text-center bg-current text-white border-[1.5px] border-current rounded ">
+              1
+            </span>
+            <span className="cursor-pointer p-2 w-11 text-center text-gray-400 border-2 border-gray-200 rounded ">
+              2
+            </span>
+            <span className="cursor-pointer p-2 w-11 text-center text-gray-400 border-2 border-gray-200 rounded ">
+              3
+            </span>
+            <span className="cursor-pointer p-2 w-11 text-center text-gray-400 border-2 border-gray-200 rounded ">
+              4
+            </span>
+            <span className="cursor-pointer p-2 w-11 text-center text-gray-400 border-2 border-gray-200 rounded ">
+              5
+            </span>
+            <span className="cursor-pointer font-medium text-gray-500 text-sm">
+              Next
+            </span>
+          </div>
+        </div>
       </div>
+
+      <Footer />
     </div>
   );
 }
