@@ -1,18 +1,21 @@
 import { FcGoogle } from "react-icons/fc";
 import { BsFacebook } from "react-icons/bs";
 import { HiOutlineEye } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 function SignUp() {
   return (
-    <div className="flex justify-between">
+    <div className="flex">
       {/* left side ------------>  */}
       {/* ------------------------>  */}
-      <div className="relative w-[750px] h-screen">
-        <img
-          src="vidyarthi-app/assets/Vidyarthi_Logo.png"
-          className="absolute top-8 left-12"
-        />
-        <img src="vidyarthi-app/assets/signup.png" className="w-[680px] 2xl:w-full h-full" />
+      <div className="relative h-screen">
+        <Link to="/vidyarthi-app">
+          <img
+            src="vidyarthi-app/assets/Vidyarthi_Logo.png"
+            className="absolute top-8 left-12"
+          />
+        </Link>
+        <img src="vidyarthi-app/assets/signup.png" className=" h-full" />
       </div>
 
       {/* right side -------------------->  */}
@@ -23,9 +26,11 @@ function SignUp() {
           <span className="text-gray-400 text-sm cursor-pointer">
             Already have an account?
           </span>
-          <button className="ml-4 font-medium w-32 text-center py-2  rounded bg-current text-white">
-            <a href="">Login</a>
-          </button>
+          <Link to="/signin">
+            <button className="ml-4 font-medium w-32 text-center py-2  rounded bg-current text-white">
+              <a href="">Login</a>
+            </button>
+          </Link>
         </div>
 
         {/* main section (login page ) ------------>  */}
@@ -70,7 +75,7 @@ function SignUp() {
                 type="password"
                 name="pw"
                 placeholder="Create password"
-                className="flex-1 h-full placeholder:text-xs py-2  focus:outline-none px-1.5 text-sm "
+                className="flex-1 h-full placeholder:text-xs py-2  focus:outline-none rounded px-1.5 text-sm "
               />
               <HiOutlineEye className="mr-3 text-gray-400 text-lg cursor-pointer" />
             </div>
@@ -80,7 +85,7 @@ function SignUp() {
                 type="password"
                 name="pw"
                 placeholder="Confirm password"
-                className="flex-1 h-full placeholder:text-xs  focus:outline-none px-1.5 text-sm "
+                className="flex-1 h-full placeholder:text-xs rounded focus:outline-none px-1.5 text-sm "
               />
               <HiOutlineEye className="mr-3 text-gray-400 text-lg cursor-pointer" />
             </div>
@@ -105,24 +110,24 @@ function SignUp() {
 
           {/* or signup between lines ---------->  */}
           <div className="flex justify-between items-center my-5">
-            <hr className="w-[340px] 2xl:w-[380px]" />
+            <hr className="flex-1" />
             <span className="text-xs ">Or SignUp</span>
-            <hr className="w-[340px] 2xl:w-[380px]" />
+            <hr className="flex-1" />
           </div>
 
           {/* social buttons ------------->  */}
           <div className="flex justify-center">
-            <div className="border-[1.5px] border-gray-200 flex  pr-5 pl-3 items-center justify-center">
-              <span className=" border-r-[1.5px] border-gray-200 py-2 mr-4 cursor-pointer">
+            <div className="border-[1.5px] border-gray-200 hover:border-3 hover:border-gray-400 cursor-pointer  flex  pr-5 pl-3 items-center justify-center">
+              <span className=" border-r-[1.5px] border-gray-200 py-2 mr-4">
                 <FcGoogle className="text-2xl mr-2  " />
               </span>
-              <p className="cursor-pointer text-sm">Google</p>
+              <p className=" text-sm">Google</p>
             </div>
-            <div className="ml-7 border-[1.5px] border-gray-200 flex pr-5 pl-3 items-center flex-start">
-              <span className=" border-r-[1.5px] border-gray-200 py-2 mr-4 cursor-pointer">
+            <div className="ml-7 border-[1.5px] border-gray-200 hover:border-3 hover:border-gray-400 cursor-pointer  flex pr-5 pl-3 items-center flex-start">
+              <span className=" border-r-[1.5px] border-gray-200 py-2 mr-4 ">
                 <BsFacebook className="text-2xl text-blue-600 mr-2" />
               </span>
-              <p className="cursor-pointer text-sm">Facebook</p>
+              <p className=" text-sm">Facebook</p>
             </div>
           </div>
         </div>

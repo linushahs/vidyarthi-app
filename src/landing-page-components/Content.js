@@ -7,9 +7,9 @@ function Content() {
     <div className="">
       {/* Front page elements  */}
       {/* ------------------------ */}
-      <div className="bg-sec pl-24 pb-[80px]">
+      <div className="bg-sec pt-20 pl-24 pb-16 flex justify-between items-center">
         {/* Left side -- --------------->  */}
-        <div className=" pt-24 flex flex-col">
+        <div className="  flex flex-col">
           <h1 className="text-5xl font-semibold leading-snug">
             Learning that <br /> gets you
           </h1>
@@ -29,24 +29,79 @@ function Content() {
               <BiSearch className="w-12 h-12 text-md bg-current p-3 text-white rounded-lg" />
             </button>
           </div>
-
-          {/* Right side ------------> */}
-          {/* Animation part goes here ->  */}
-          <div className="w-1/2 h-1/2 absolute right-0 bg-slate-400 z-10">
-            Animated Part
-          </div>
         </div>
 
-        {/* Trusted companies section ->  */}
-        <div className="flex justify-between mt-24 font-medium  mr-24">
-          <div className="w-96 border-solid border-r-2 border-black">
-            Authentic Content <br /> from the most trusted names
+        {/* Right side ------------> */}
+        {/* Animation part goes here ->  */}
+        <div className=" flex h-96 gap-3 justify-end z-10">
+          {/* Design courses --------->  */}
+          <div className="relative text-white  rounded-lg object-cover w-80 h-full bg-top bg-[url('https://images.unsplash.com/photo-1613980790147-f4f449df0dd9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80')]">
+            <div className="absolute top-0 left-0 w-full h-full flex justify-between items-end  px-5 py-5 z-10">
+              <h2 className="text-xl font-medium">
+                Design <br /> Courses
+              </h2>
+              <p className="text-center text-xl font-medium">
+                100+ <br />
+                <span className="text-base font-light">Categories</span>
+              </p>
+            </div>
+            <div className="absolute top-0 left-0 w-full h-full rounded-lg bg-gradient-to-b from-transparent to-black opacity-80 "></div>
           </div>
-          <div className="flex items-center w-1/2 justify-between">
-            <img src="vidyarthi-app/assets/moodle.png" className="h-9" />
-            <img src="vidyarthi-app/assets/Guto.png" className="h-9" />
-            <img src="vidyarthi-app/assets/ecademy.png" className="h-9" />
+
+          {/* programming ------------------->  */}
+          <div className="relative text-white  rounded-lg object-cover w-56 h-full bg-top bg-[url('https://images.unsplash.com/photo-1595675024853-0f3ec9098ac7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80')]">
+            <div className="absolute top-0 left-0 w-full h-full flex justify-between items-end  px-5 py-5 z-10">
+              <h2 className="text-xl font-medium -rotate-90 -translate-y-14 -translate-x-14">
+                Programming
+              </h2>
+              <p className="text-center text-xl font-medium invisible">
+                100+ <br />
+                <span className="text-base font-light">Categories</span>
+              </p>
+            </div>
+            <div className="absolute top-0 left-0 w-full h-full rounded-lg bg-gradient-to-bl from-transparent to-black opacity-80 "></div>
           </div>
+
+          {/* Marketing ----------------------->  */}
+          <div className="relative text-white  rounded-lg  w-40 h-full bg-cover  bg-[url('https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')]">
+            <div className="absolute top-0 left-0 w-full h-full flex justify-between items-end  px-5 py-5 z-10">
+              <h2 className="text-xl font-medium -rotate-90 -translate-y-10 -translate-x-10">
+                Marketing
+              </h2>
+              <p className="text-center text-xl font-medium invisible">
+                100+ <br />
+                <span className="text-base font-light">Categories</span>
+              </p>
+            </div>
+            <div className="absolute top-0 left-0 w-full h-full rounded-lg bg-gradient-to-bl from-transparent to-black opacity-80 "></div>
+          </div>
+
+          {/* art -------------------------->  */}
+          <div className="relative text-white  rounded-lg  w-36 h-full bg-cover  bg-[url('https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80')]">
+            <div className="absolute top-0 left-0 w-full h-full flex justify-between items-end  px-5 py-5 z-10">
+              <h2 className="text-xl font-medium -rotate-90 -translate-y-2 -translate-x-2">
+                Art
+              </h2>
+              <p className="text-center text-xl font-medium invisible">
+                100+ <br />
+                <span className="text-base font-light">Categories</span>
+              </p>
+            </div>
+            <div className="absolute top-0 left-0 w-full h-full rounded-lg bg-gradient-to-bl from-transparent to-black opacity-80 "></div>
+          </div>
+        </div>
+      </div>
+
+      {/* Trusted companies section ->  */}
+      {/* -------------------------------->  */}
+      <div className="flex justify-between font-medium px-24 pb-16 bg-sec">
+        <div className="w-96 border-solid border-r-2 border-black">
+          Authentic Content <br /> from the most trusted names
+        </div>
+        <div className="flex items-center w-1/2 justify-between">
+          <img src="vidyarthi-app/assets/moodle.png" className="h-9" />
+          <img src="vidyarthi-app/assets/Guto.png" className="h-9" />
+          <img src="vidyarthi-app/assets/ecademy.png" className="h-9" />
         </div>
       </div>
 
@@ -365,7 +420,7 @@ function Content() {
       {/* Join Us  section ---------------------->
       ----------------------------------------> */}
       <div className="flex justify-center  py-12">
-        <img src="vidyarthi-app/assets/joinus.png" />
+        <img src="vidyarthi-app/assets/joinus.png" className="w-1/3" />
         <div className="ml-20">
           <h1 className="text-5xl font-medium mt-6">Join Us!</h1>
           <p className="text-gray-500 text-sm mt-3">
@@ -391,19 +446,21 @@ function Content() {
       {/* -------------------------------------->  */}
       <div className="bg-current py-12 px-24 flex justify-between ">
         {/* Left side -------------->  */}
-        <div className="w-1/3 text-white flex flex-col">
-          <img
-            src="vidyarthi-app/assets/Vidyarthi-White-Logo.png"
-            width="140px"
-            className=""
-          />
-          <p className="mt-6 text-sm">
-            Yet bed any for travelling assistance indulgence unpleasing. Not
-            thoughts all exercise blessing. Indulgence way everything joy
-            alteration boisterous the attachment.
-          </p>
+        <div className="w-1/3 text-white flex flex-col justify-between">
+          <div>
+            <img
+              src="vidyarthi-app/assets/Vidyarthi-White-Logo.png"
+              width="140px"
+              className=""
+            />
+            <p className="mt-4 text-sm">
+              Yet bed any for travelling assistance indulgence unpleasing. Not
+              thoughts all exercise blessing. Indulgence way everything joy
+              alteration boisterous the attachment.
+            </p>
+          </div>
 
-          <div className="text-white/50 text-sm">
+          <div className="text-white/50 text-sm ">
             &copy; 2022 - <span>Vidyarthi.</span> All rights reserved
           </div>
         </div>

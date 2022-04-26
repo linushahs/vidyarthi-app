@@ -25,7 +25,7 @@ function Course({ imgSrc, tag, title, rating, reviews, desc, price }) {
       <p className="text-gray-600 text-sm mt-4">{desc}</p>
       {/* price of course  */}
       <div className="mt-4 flex justify-between items-center">
-        <h3 className="font-semibold">
+        <h3 className="font-semibold flex items-center">
           <span className="text-current text-2xl">${price}</span>/courses
         </h3>
         <FiArrowRight className="w-10 h-10 shadow p-2 rounded-full hover:shadow-lg hover:bg-current hover:text-white hover:shadow-current cursor-pointer" />
