@@ -4,6 +4,7 @@ import Header from "./landing-page-components/Header";
 import SignIn from "./landing-page-components/SignIn";
 import SignUp from "./landing-page-components/SignUp";
 import CoursesPage from "./courses-page/CoursesPage";
+import StudentDashboard from "./dashboard/StudentDashboard";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -19,11 +20,11 @@ function App() {
             </div>
           }
         />
-        {/* <Route path="/" element={<Content />} /> */}
         <Route path="/courses" element={<CoursesPage />} />
-        {/* <Route path="/courses" element={<CoursesPage />} /> */}
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
+
+        <Route path="/vidyarthi-app/dashboard" element={<StudentDashboard />} />
       </Routes>
     </div>
   );
