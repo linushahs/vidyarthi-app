@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/linushahs/vidyarthi-app">
-    <img src="public/assets/Vidyarthi_Logo.png" alt="Logo" width="80" height="80">
+    <img src="public/assets/Vidyarthi-White-Logo.png" alt="Logo" width="260" height="80">
   </a>
 
 <h3 align="center">Vidyarthi-App</h3>
