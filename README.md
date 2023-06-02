@@ -34,9 +34,7 @@
   </a>
 
 <h3 align="center">Vidyarthi-App</h3>
-
   <p align="center">
-  
     <br />
     <a href="https://github.com/linushahs/vidyarthi-app"><strong>Explore the docs »</strong></a>
     <br />
